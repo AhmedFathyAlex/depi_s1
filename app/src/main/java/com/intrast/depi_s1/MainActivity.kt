@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // add some comment
         setContentView(R.layout.login_screen)
 
     }
