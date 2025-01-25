@@ -15,7 +15,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <fragment
-        android:id="@+id/fragment"
+        android:id="@+id/topFragment"
         android:name="com.intrast.depi_s1.TopFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -25,6 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
+        android:id="@+id/bottomFragment"
         android:layout_width="match_parent"
         android:name="com.intrast.depi_s1.BottomFragment"
         android:layout_height="0dp"
@@ -32,4 +33,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
