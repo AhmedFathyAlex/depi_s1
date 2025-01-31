@@ -19,6 +19,15 @@ class BottomFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val name = arguments?.getString("name").toString()
+        setText(name)
+    }
+
+
+
+
     fun setText(name:String){
         binding.textView.text = name
 

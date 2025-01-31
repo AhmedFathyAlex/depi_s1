@@ -30,10 +30,13 @@ class TopFragment : Fragment() {
             if (activity is SecondActivity) {
                val activity = activity as SecondActivity
                 activity.getText(name)
-            }else{
+            }else if (activity is ThirdActivity){
+                val activity = activity as ThirdActivity
+                activity.getText(name)
+            }
+            else{
                 Toast.makeText(context,"Not in the Second Activity",Toast.LENGTH_SHORT).show()
             }
-
 
         }
 
