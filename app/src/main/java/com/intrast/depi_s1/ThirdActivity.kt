@@ -49,6 +49,11 @@ class ThirdActivity : AppCompatActivity() {
 
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG,"onDestroy called: ")
+    }
+
     fun getText(name:String){
         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT){
             val bottomFragment = BottomFragment()

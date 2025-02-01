@@ -21,7 +21,8 @@ class BottomFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val name = arguments?.getString("name").toString()
+//        val name = arguments?.getString("name").toString()
+        val name = BottomFragmentArgs.fromBundle(requireArguments()).name
         setText(name)
     }
 
