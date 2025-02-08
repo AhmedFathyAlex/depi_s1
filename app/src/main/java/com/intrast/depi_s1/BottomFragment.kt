@@ -26,9 +26,6 @@ class BottomFragment : Fragment() {
         setText(name)
     }
 
-
-
-
     fun setText(name:String){
         binding.textView.text = name
 
