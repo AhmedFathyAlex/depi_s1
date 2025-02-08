@@ -54,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="54dp"
+            android:text="@{String.valueOf(viewModel.teamAScore)}"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="@+id/textView3"
             app:layout_constraintStart_toStartOf="@+id/textView3"
@@ -64,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="54dp"
+            android:text="@{String.valueOf(viewModel.teamBScore)}"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="@+id/textView4"
             app:layout_constraintStart_toStartOf="@+id/textView4"
@@ -71,6 +73,7 @@
 
         <Button
             android:id="@+id/addTeamAScoreButton"
+            android:onClick="@{view -> viewModel.incrementScore(true)}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -81,6 +84,7 @@
 
         <Button
             android:id="@+id/addTeamBScoreButton"
+            android:onClick="@{view -> viewModel.incrementScore(false)}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
@@ -91,6 +95,7 @@
 
         <Button
             android:id="@+id/resetButton"
+            android:onClick="@{view -> viewModel.resetScore()}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="120dp"

@@ -1,5 +1,6 @@
 package com.intrast.depi_s1
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 
 class ScoreViewModel : ViewModel() {
@@ -14,6 +15,7 @@ class ScoreViewModel : ViewModel() {
         } else {
             teamBScore++
         }
+        Log.d("ScoreViewModel", "Team A Score: $teamAScore, Team B Score: $teamBScore")
     }
 
     fun resetScore(){
